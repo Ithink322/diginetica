@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "GothamPro Bold";
+  src: url("@/assets/fonts/GothamPro-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Medium";
+  src: url("@/assets/fonts/Inter-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter Regular";
+  src: url("@/assets/fonts/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PTSans Bold";
+  src: url("@/assets/fonts/PT_Sans-Web-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PTSans Regular";
+  src: url("@/assets/fonts/PT_Sans-Web-Regular.woff2") format("woff2");
+}
+$--color-font-main: #333333;
+$--color-font-second: #aaaaaa;
+$--color-font-hover: #125bae;
+$--color-font-bg: #e2efff;
+$--color-font-history: #5a0488;
+$--color-font-header-title: #393939;
+$--color-brand: #7397f5;
+$--color-border-w-radius: #73aff4;
+$--color-border: #d5d5d5;
+$--color-icons: #cbcbcb;
+$--scroll-bar: #f2f2f2;
+$--color-white: #ffffff;
+$--color-black: #000000;
+$--color-card-hero-bgcolor: #f8f8fa;
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: fit-content;
+  border: none;
+  padding: 0rem;
+  cursor: pointer;
+}
+@mixin input {
+  background: none;
+  border: none;
+  padding: 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+@mixin ul {
+  list-style-type: none;
+  padding: 0rem;
+
+  li {
+    a {
+      text-decoration: none;
+      color: $--color-font-header-title;
+    }
+  }
+}
+@mixin flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
