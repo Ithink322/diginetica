@@ -31,6 +31,8 @@ export default {
 @import "@/assets/styles/app.scss";
 
 .content {
+  margin-bottom: 2.25rem;
+
   &__title {
     font-family: "PTSans Regular";
     font-size: 1.375rem;
@@ -65,8 +67,6 @@ export default {
 /* 1440px = 90em */
 @media (min-width: 90em) {
   .content {
-    margin-bottom: 2.25rem;
-
     &__title {
       display: none;
     }
