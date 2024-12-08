@@ -18,7 +18,10 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        additionalData: `@import "~src/assets/styles/app.scss";`,
+        additionalData: `@import "${path.resolve(
+          __dirname,
+          "src/assets/styles/app.scss"
+        )}";`,
       },
     },
   },
