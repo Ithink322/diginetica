@@ -1,4 +1,17 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
-});
+const path = require("path");
+
+module.exports = {
+  publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
+
+  outputDir: "dist",
+
+  assetsDir: "static",
+
+  configureWebpack: {
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "src"),
+      },
+    },
+  },
+};
