@@ -46,10 +46,7 @@ $--color-card-hero-bgcolor: #f8f8fa;
   background: none;
   border: none;
   padding: 0;
-
-  &:focus {
-    outline: none;
-  }
+  outline: none;
 }
 @mixin ul {
   list-style-type: none;

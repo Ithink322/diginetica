@@ -236,6 +236,9 @@ export default {
         appearance: none;
         margin: 0;
       }
+      &:focus {
+        border: 1px solid $--color-border-w-radius;
+      }
     }
     &__slider-range-border {
       width: 10px;
@@ -287,6 +290,9 @@ export default {
 
       &::placeholder {
         color: $--color-font-second;
+      }
+      &:focus {
+        border: 1px solid $--color-border-w-radius;
       }
     }
     &__filters-list {
@@ -353,6 +359,11 @@ export default {
       font-size: 0.875rem;
       color: $--color-font-main;
       cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $--color-font-hover;
+      }
     }
     &__filters-count {
       font-family: "PTSans Regular";

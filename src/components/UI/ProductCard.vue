@@ -3,10 +3,7 @@
     class="product-card"
     :class="{ 'product-card--unavailable': isUnavailable }"
   >
-    <div
-      class="product-card__container"
-      :class="{ 'product-card__container--unavailable': isUnavailable }"
-    >
+    <div class="product-card__container">
       <div class="product-card__status">
         {{ product.status }}
         <img :src="product.statusImg" alt="status icon" />
@@ -65,6 +62,7 @@ export default {
 
   &--unavailable {
     opacity: 50%;
+    pointer-events: none;
   }
   &__container {
     position: relative;
@@ -72,10 +70,7 @@ export default {
     background-color: $--color-card-hero-bgcolor;
     padding: 0.75rem;
     height: 200px;
-
-    &--unavailable {
-      opacity: 50%;
-    }
+    cursor: pointer;
   }
   &__status {
     position: absolute;
@@ -110,6 +105,7 @@ export default {
   &__info {
     @include flex-column;
     gap: 0.5rem;
+    cursor: pointer;
   }
   &__brand {
     font-family: "PTSans Regular";
@@ -120,6 +116,7 @@ export default {
     font-family: "PTSans Regular";
     font-size: 0.875rem;
     color: $--color-font-main;
+    transition: color 0.3s ease;
   }
   &__prices {
     @include flex-align;
@@ -135,5 +132,8 @@ export default {
     color: $--color-font-second;
     text-decoration: line-through;
   }
+}
+.product-card__info:hover .product-card__desc {
+  color: $--color-font-hover;
 }
 </style>

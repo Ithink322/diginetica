@@ -65,6 +65,8 @@ export default {
 /* 1440px = 90em */
 @media (min-width: 90em) {
   .content {
+    margin-bottom: 2.25rem;
+
     &__title {
       display: none;
     }
