@@ -150,7 +150,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "/src/assets/styles/app.scss";
+@import "@/assets/styles/app.scss";
 
 .sidebar {
   display: none;
