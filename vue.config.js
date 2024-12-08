@@ -1,4 +1,4 @@
-const path = require("path");
+/* const path = require("path");
 
 module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
@@ -20,9 +20,10 @@ module.exports = {
       sass: {
         additionalData: `@import "${path.resolve(
           __dirname,
-          "src/assets/styles/app.scss"
+          "@/assets/styles/app.scss"
         )}";`,
       },
     },
   },
 };
+ */

@@ -64,7 +64,6 @@
               class="sidebar__filters-checkbox"
               :value="brand.name"
               :id="'sidebar__filters-checkbox-' + index"
-              @change="toggleBrandFilter"
             />
             <label
               class="sidebar__filters-name"
@@ -151,7 +150,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/app.scss";
+@import "/src/assets/styles/app.scss";
 
 .sidebar {
   display: none;

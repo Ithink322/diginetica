@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/app.scss";
+@import "/src/assets/styles/app.scss";
 
 .product-card {
   @include flex-column;

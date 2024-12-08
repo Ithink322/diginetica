@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/app.scss";
+@import "/src/assets/styles/app.scss";
 
 .btn {
   @include btn;
